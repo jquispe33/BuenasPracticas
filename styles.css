@@ -1,0 +1,103 @@
+   body {
+    margin: ;
+    /*background-color: #ccc;*/
+  }
+  
+  .top-bar {
+    /*background: #333;*/
+    background-color: #ccc;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .top-bar {
+      display: block;
+    }
+  } 
+  
+  .top-bar .icon-menu { /*OK*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    padding-left: 1em;
+  } 
+  
+  .icon-bar {
+    background: #fff;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    position: relative;
+  } 
+  
+    .icon-bar:after,
+    .icon-bar:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background: #fff;
+    top: -0.5em;
+  } 
+  
+    .icon-bar:after {
+    top: 0.5em;
+  }
+
+  /*Este lo tapa*/
+ /* .main-menu  {
+    background: #333;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    list-style: none;
+    position: relative;
+    left: -100%;
+    transition: all 0.3s;
+  }*/   
+  
+  .main-menu .main-menu__item .main-menu__link{ 
+    color: #fff;
+    text-decoration: none;
+  }
+  
+    @media screen and (min-width: 768px) { 
+      .top-bar-section .main-menu{
+      display: flex;
+      justify-content: space-evenly;
+      left: 0;
+    }
+  }
+  
+   .main-menu.show { /*falta*/
+    left: 0;
+  }  
+  
+   .main-menu .main-menu__item {  /*falta*/
+    padding: 1em;
+    border-bottom: 1px solid #fff;
+  } 
+  
+    @media screen and (min-width: 768px) { /*falta*/
+    .top-bar-section li {
+      border-bottom: none;
+      text-transform: uppercase;
+    }
+    .top-bar-section li:hover {
+      background: grey;
+    }
+    .top-bar-section li:hover a {
+      color: #000;
+    }
+  }  
+  
+  /*  POR QUÉ NO SE APLICA ESTA CLASE */
+  .link {
+    color: red;
+  }
+  
